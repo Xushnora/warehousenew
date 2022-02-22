@@ -105,7 +105,7 @@
 .product-hover-btn {
     position: absolute;
     bottom: -50px;
-    left: 40%;
+    left: 38%;
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
@@ -559,7 +559,12 @@ background-color: #105caa;
 .nav-item {
     margin-bottom: 15px;
 }
-
+.third__modal{
+    display: none;
+}
+.fourth__modal{
+    display: none;
+}
 }
 
 

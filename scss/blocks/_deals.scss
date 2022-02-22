@@ -770,6 +770,12 @@
     .deals__item:nth-child(2){
         display: none;
     }
+    .first__modal{
+        display: none;
+    }
+    .second__modal{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 576px) {
