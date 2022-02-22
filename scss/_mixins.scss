@@ -12,3 +12,16 @@
   text-decoration: none;
   color: $link-color;
 }
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin before {
+  content: '';
+  display: inline-block;
+}
+@mixin bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+}

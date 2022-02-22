@@ -2,7 +2,7 @@
 
 
 .product {
-    padding: 66px 0 112px 0;
+    padding: 66px 0;
 }
 .product__title {
     font-size: 2rem;
@@ -62,6 +62,7 @@
     display: flex;
     flex-wrap: wrap;
     transition: all 0.8s ease;
+    margin-bottom: 60px;
 }
 .product__item {
     position: relative;
@@ -235,54 +236,15 @@
 }
 
 
-.product__item:nth-child(1):hover .product__hover {
+.product__item:hover .product__hover {
     position: absolute;
     top: -5%;
-    left: -6%;
+    left: -3%;
     display: block;
     transition: all 0.4s ease;
-    z-index: 1000;
+    z-index: 100;
 }
-.product__item:nth-child(2):hover .product__hover {
-    position: absolute;
-    top: -5%;
-    left: -6%;
-    display: block;
-    transition: all 0.4s ease;
-    z-index: 1000;
-}
-.product__item:nth-child(3):hover .product__hover {
-    position: absolute;
-    top: -5%;
-    left: -6%;
-    display: block;
-    transition: all 0.4s ease;
-    z-index: 1000;
-}
-.product__item:nth-child(4):hover .product__hover {
-    position: absolute;
-    top: -5%;
-    left: -6%;
-    display: block;
-    transition: all 0.4s ease;
-    z-index: 1000;
-}
-.product__item:nth-child(5):hover .product__hover {
-    position: absolute;
-    top: -5%;
-    left: -6%;
-    display: block;
-    transition: all 0.4s ease;
-    z-index: 1000;
-}
-.product__item:nth-child(6):hover .product__hover {
-    position: absolute;
-    top: -5%;
-    left: -6%;
-    display: block;
-    transition: all 0.4s ease;
-    z-index: 1000;
-}
+
 .product__item:hover .product-btn{
     transition: all 0.6s ease;
     opacity: 1;
@@ -295,7 +257,7 @@
 
 @keyframes product-anim {
     100% {
-        width: 106%;
+        width: 105%;
         height: 590px;
         opacity: 1;
     }
@@ -305,35 +267,33 @@
         transform: translateY(-50px);
     }
 }
+.product__buttons{
+    display: flex;
+    justify-content: center;
+}
+.buttons__list {
+    @include list-unstyled();
+    display: flex;
+}
+.buttons__btn {
+    width: 20px;
+    height: 20px;
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    border: none;
+    margin: 0 5px 0 5px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    &:hover {
+        background-color: #fd6666;
+    }
+    &:focus {
+        background-color: #fd6666;
+    }
+    &--active{
+        background-color: #fd6666;
+    }
+}
 @media screen and (max-width: 768px) {
-
-
 
 .product__text {
     width: 100%;
@@ -343,34 +303,6 @@
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -502,7 +434,7 @@
     margin-bottom: 15px;
 }
 .stock__text {
-    color: #444;
+    color: #444 !important;
     letter-spacing: .1px;
     font-size: 10px;
     font-weight: 700;

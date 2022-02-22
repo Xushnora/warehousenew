@@ -18,6 +18,7 @@ var modalNavBox = document.getElementById('modalNavBox');
 var menuBtn = document.getElementById('menuBtn');
 var scrollSidebar = document.getElementById('scrollSidebar');
 
+
 settings.addEventListener('click', function(){
   modalSettings.classList.toggle('show-settings')
 });
