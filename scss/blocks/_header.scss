@@ -644,6 +644,12 @@
   .hoverbox__title{
     font-size: 10px;
   }
+  .nav__hoverbox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+  }
 }
 @media screen and (max-width:576px) {
   .header__logo--dark{
