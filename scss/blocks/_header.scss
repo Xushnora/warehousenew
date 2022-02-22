@@ -68,6 +68,8 @@
 .nav{
   @include flex-center();
   background-color: $primary-color;
+}
+.nav.navv{
   border-top: 1px solid #2e6cb2;
 }
 .nav__item{
