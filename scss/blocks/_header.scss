@@ -634,32 +634,7 @@
   .on-top{
     display: none;
   }
-  .nav__item{
-    position: relative;
-    padding: 20px 0 20px 20px;
-    &--active{
-      background-color: $light-blue;
-    }
- 
-    &:hover .nav__hoverbox{
-      display: none;
-    }
 
-    &:hover {
-      background-color: #fff;
- 
-      .nav__link{
-        color: $primary-color;
-      }
-    }
-    &:hover .hoverbox2{
-      display: none;
-    }
-
-    &:hover .nav__hoverbox3{
-      display: none;
-    }
-  }
   .nav__item--active{
     background-color: #fff;
   }
@@ -676,6 +651,6 @@
     height: 13px;
   }
   .sidebar__item{
-    margin: 6px 10px
+    margin: 6px 12px
   }
 }
